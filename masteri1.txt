@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-tässä on konflikti.
-=======
 
-tässä on konflikti.
->>>>>>> bird
+
+
+
+tässä on tekstiä.
+
