@@ -13,12 +13,12 @@ public class Kirjanpito implements KirjanpitoInterface {
         tapahtumat = new ArrayList<String>();
     }
     
-  @Override
+    @Override
     public void lisaaTapahtuma(String tapahtuma) {
         tapahtumat.add(tapahtuma);
     }
 
-  @Override
+    @Override
     public ArrayList<String> getTapahtumat() {
         return tapahtumat;
     }       

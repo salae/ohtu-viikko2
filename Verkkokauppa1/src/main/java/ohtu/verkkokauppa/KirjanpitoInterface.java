@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public interface KirjanpitoInterface {
 
-  ArrayList<String> getTapahtumat();
+    ArrayList<String> getTapahtumat();
 
-  void lisaaTapahtuma(String tapahtuma);
+    void lisaaTapahtuma(String tapahtuma);
   
 }

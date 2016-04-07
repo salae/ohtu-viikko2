@@ -11,7 +11,7 @@ public class Viitegeneraattori implements ViitegeneraattoriInterface {
         seuraava = 1;    
     }
     
-  @Override
+    @Override
     public int uusi(){
         return seuraava++;
     }

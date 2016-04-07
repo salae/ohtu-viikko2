@@ -17,7 +17,7 @@ public class Kauppavarasto implements Varasto {
         alustaTuotteet();
     }
             
-  @Override
+    @Override
     public Tuote haeTuote(int id){
         for (Tuote t : saldot.keySet()) {
             if ( t.getId()==id) return t;
@@ -26,18 +26,18 @@ public class Kauppavarasto implements Varasto {
         return null;
     }
 
-  @Override
+    @Override
     public int saldo(int id){
         return saldot.get(haeTuote(id));
     }
     
-  @Override
+    @Override
     public void otaVarastosta(Tuote t){        
         saldot.put(t,  saldo(t.getId())-1 );
         kirjanpito.lisaaTapahtuma("otettiin varastosta "+t);
     }
     
-  @Override
+    @Override
     public void palautaVarastoon(Tuote t){
         saldot.put(t,  saldo(t.getId())+1 );
         kirjanpito.lisaaTapahtuma("palautettiin varastoon "+t);
