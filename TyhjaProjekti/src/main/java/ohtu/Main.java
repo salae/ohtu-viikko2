@@ -31,7 +31,7 @@ public class Main {
         Gson mapper = new Gson();
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
 
-        System.out.println("Opiskelijanumero " + subs[0].getStudent_number());
+        System.out.println("Opiskelijanumero " + studentNr);
         System.out.println();
         for (Submission submission : subs) {
             System.out.println(submission);
