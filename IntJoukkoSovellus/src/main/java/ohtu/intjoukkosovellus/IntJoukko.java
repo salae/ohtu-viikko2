@@ -119,11 +119,11 @@ public class IntJoukko {
         return leikkaus;
     }
     
-    public static IntJoukko erotus ( IntJoukko a, IntJoukko b) {
-        IntJoukko erotus = new IntJoukko();
+    public static IntJoukko erotus (IntJoukko a, IntJoukko b) {
+        IntJoukko erotus = a;
         int[] poistettavat = b.toIntArray();
         for (int alkio : poistettavat) {
-            erotus.poista(alkio);
+            a.poista(alkio);
         } 
         return erotus;
     }

@@ -13,4 +13,11 @@ public class IntJoukkoKaksiparametrisellaKonstruktorillaTest extends IntJoukkoTe
         joukko.lisaa(10);
         joukko.lisaa(3);
     }
+    
+    @Test
+    public void testKaksiparametristaKontstruktoria() {
+        joukko.lisaa(10);
+        joukko.lisaa(3);
+        assertEquals(2, joukko.mahtavuus());
+    }    
 }
